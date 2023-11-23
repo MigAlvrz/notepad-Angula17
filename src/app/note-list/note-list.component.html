@@ -1,0 +1,9 @@
+<div class="notelist-container">
+    <app-activeNote />
+    <div class="notes-container">
+        @for (note of notes(); track $index) {
+            <app-note [noteData]="note" />
+        }
+    </div>
+    <p>test</p>
+</div>
